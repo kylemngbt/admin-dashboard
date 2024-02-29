@@ -35,7 +35,7 @@ ul {
   height: 100vh;
   display: grid;
   grid-template-columns: 300px 1fr;
-  grid-template-rows: 175px 1fr;
+  grid-template-rows: 160px 1fr;
   grid-template-areas: 
   "sidebar header"
   "sidebar main-content";
@@ -266,6 +266,7 @@ input[class="search-bar"]:focus {
   width: 65px;
   height: 65px;
   justify-self: center;
+  margin-bottom: 10px;
 }
 
 .intro-text {
@@ -321,7 +322,7 @@ input[class="search-bar"]:focus {
   "your-projects-container trending-title"
   "your-projects-container trending-container";
   padding-left: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   padding-right: 50px;
   padding-top: 15px;
   column-gap: 25px;
@@ -439,16 +440,76 @@ input[class="search-bar"]:focus {
   background-color: white;
   box-shadow: 4px 5px 8px 1px rgba(0,0,0,0.1);
   border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 15px;
 }
+
+.ann-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.ann-desc {
+  color: #636363;
+  font-size: 0.9rem;
+}
+
+.ann-box1,
+.ann-box2 {
+  border-bottom: 2px solid #d2d2d2;
+}
+
+.ann-box1,
+.ann-box2,
+.ann-box3 {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+/* TRENDING */
 
 .trending-container {
   grid-area: trending-container;
   background-color: white;
   box-shadow: 4px 5px 8px 1px rgba(0,0,0,0.1);
   border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  box-sizing: border-box;
+  padding: 25px;
+  row-gap: 25px;
 }
 
+.trend-box1,
+.trend-box2,
+.trend-box3,
+.trend-box4 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 20px 1fr;
+  grid-template-areas: 
+  "trend-pic trend-name"
+  "trend-pic trend-desc";
+  column-gap: 15px;
+}
 
+.trend-pic {
+  grid-area: trend-pic;
+}
+
+.trend-name {
+  grid-area: trend-name;
+  font-size: 1rem;
+}
+
+.trend-desc {
+  grid-area: trend-desc;
+  color: #636363;
+  font-size: 1rem;
+}
 
 
 
