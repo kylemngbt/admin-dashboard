@@ -494,6 +494,7 @@ input[class="search-bar"]:focus {
   "trend-pic trend-name"
   "trend-pic trend-desc";
   column-gap: 15px;
+  align-items: center;
 }
 
 .trend-pic {
