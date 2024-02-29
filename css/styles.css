@@ -327,6 +327,7 @@ input[class="search-bar"]:focus {
   padding-top: 15px;
   column-gap: 25px;
   row-gap: 20px;
+  box-sizing: border-box;
 }
 
 .announcements-title {
@@ -480,7 +481,7 @@ input[class="search-bar"]:focus {
   grid-template-rows: repeat(4, 1fr);
   box-sizing: border-box;
   padding: 25px;
-  row-gap: 25px;
+  row-gap: 20px;
 }
 
 .trend-box1,
